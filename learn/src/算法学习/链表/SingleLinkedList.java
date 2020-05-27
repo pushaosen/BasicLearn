@@ -56,6 +56,7 @@ public class SingleLinkedList {
 		if(size == 0) {
 			return false;
 		}
+		// 把头指针赋给当前指针
 		Node current = head;
 		Node previous = head;
 		while(current.data != value) {
