@@ -15,6 +15,11 @@ public class Knapsack {
 		selects = new boolean[weights.length];
 	}
 	
+	/**
+	 * 找出符合承重重量的组合
+	 * @param total    总重量
+	 * @param index    可供选择的重量下标
+	 */
 	public void knapsack(int total, int index) {
 		if(total < 0 || total > 0 && index >= weights.length) {
 			return;   //没找到解决办法，直接
@@ -22,7 +27,7 @@ public class Knapsack {
 		if(total == 0){//总重量为0，则找到解决办法了
             for(int i = 0 ; i < index ; i++){
                 if(selects[i] == true){
-                    System.out.println(weights[i]+" ");
+                    System.out.print(weights[i]+" ");
                 }
             }
             System.out.println();
