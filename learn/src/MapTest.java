@@ -8,7 +8,7 @@ import java.util.Map;
 public class MapTest {
 	
 	public static void main(String[] args) {
-		Map<String, String> map = new HashMap();
+		Map<String, String> map = new HashMap<String, String>();
 //		fun(map);
 		System.out.println(map);
 		System.out.println(map.isEmpty());
@@ -23,7 +23,6 @@ public class MapTest {
 		System.out.println(nBj);
 		nBj = nBj.subtract(BigDecimal.ZERO);
 		System.out.println(nBj);
-		
 	}
 	
 	public static void fun(Map<String, String> map) {
