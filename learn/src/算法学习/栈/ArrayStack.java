@@ -70,7 +70,7 @@ public class ArrayStack {
 	}
 
 	// 是否需要扩容，如果需要，则扩大一倍并返回true，不需要则返回false
-	public boolean isGrow(int minCapacity) {
+    public boolean isGrow(int minCapacity) {
 		int old = size;
 		// 如果当前元素压入栈之后总容量大于前面定义的容量，则需要扩容
 		if(minCapacity >= old) {

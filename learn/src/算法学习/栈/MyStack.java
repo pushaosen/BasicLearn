@@ -1,5 +1,7 @@
 package 算法学习.栈;
 
+import java.util.regex.Pattern;
+
 /**
  * 由数组实现的栈
  * @author lenovo
@@ -54,6 +56,14 @@ public class MyStack {
         System.out.println(stack.peek());
         while(!stack.isEmpty()){
             System.out.println(stack.pop());
+        }
+        
+        String str = "10";
+        
+        str = str.replaceAll("[0-99]", "m");
+        
+        if(Pattern.matches("\\d*", "0")) {
+        	System.out.println(str);
         }
 	}
 }
