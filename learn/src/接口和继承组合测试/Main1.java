@@ -7,7 +7,7 @@ package 接口和继承组合测试;
  * @author lenovo
  *
  */
-public class Main {
+public class Main1 {
 
 	public static void main(String[] args) {
 		
