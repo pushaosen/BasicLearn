@@ -1,5 +1,8 @@
 package thisÓësupper²âÊÔ;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TestSplitTest {
 	
 	public static void main(String[] args) {
@@ -14,6 +17,19 @@ public class TestSplitTest {
 			str = prefix + ")" + pre;
 		}
 		System.out.println(str);
+		
+		List<String> list1 = new ArrayList<String>();
+		list1.add("zhangsan");
+		List<String> list2 = new ArrayList<String>();
+		list2.add("zhangsan");
+		list2.add("lisi");
+		List<String> list3 = list2.subList(0, 1);
+		list3.add("wangwu");
+//		list2.add("zhou");   // »á±¨´í
+		System.out.println(list2);
+		System.out.println(list3);
+		System.out.println(list1.equals(list2));
+		
 	}
 
 }
