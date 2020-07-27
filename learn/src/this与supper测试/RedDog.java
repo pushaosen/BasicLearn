@@ -6,6 +6,6 @@ public class RedDog extends Dog {
 	}
 	
 	public static void main(String[] args) {
-		RedDog red = new RedDog();
+//		RedDog red = new RedDog();
 	}
 }
