@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
- * 自定义线程池
+ * 自定义线程工厂类
  * @author lenovo
  *
  */
