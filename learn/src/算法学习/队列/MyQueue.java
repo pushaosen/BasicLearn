@@ -63,7 +63,7 @@ public class MyQueue {
 	
 	// 判断队列是否为空
 	public boolean isEmpty() {
-		return (nItems == 0);
+		return (nItems  == 0);
 	}
 	
 	// 返回队列的大小
