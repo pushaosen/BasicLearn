@@ -8,9 +8,8 @@ import java.util.regex.Pattern;
 
 /**
  * RegexTest
- * @description 娴嬭瘯姝ｅ垯琛ㄨ揪寮�
+ * @description 正则表达式测试
  * @author pushaosen
- * @date 2020骞�05鏈�25鏃� 9:29
  * @version 1.1.0
  */
 public class RegexTest {
