@@ -1,4 +1,4 @@
-package 力扣算法.动态规划章节算法思想;
+package 反射;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 public class ReflectDemo {
 	
 	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
-		Class<?> clazz = Class.forName("力扣算法.动态规划章节算法思想.ReflectDemo");
+		Class<?> clazz = Class.forName("反射.ReflectDemo");
 		Object instance = clazz.getConstructor().newInstance();
 		for(Method method :clazz.getMethods()) {
             if ("fun".equals(method.getName())) {
