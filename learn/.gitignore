@@ -1,0 +1,32 @@
+﻿.externalToolBuilders/
+.myeclipse/
+.settings/
+.classpath
+*.war
+*.class
+bin/
+classes/
+target/
+test-output/
+jetty/
+.classpath
+.mymetadata
+.project
+.idea/
+*.iml
+# Artery
+local.properties
+.artery
+MANIFEST.MF
+# Locally stored "Eclipse launch configurations"
+*.launch
+user-config.properties
+*.log
+jetty.home_*
+
+/40_源码/msyp/node_modules
+*.factorypath
+
+*.DS_Store
+
+
