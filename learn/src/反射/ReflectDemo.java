@@ -14,6 +14,9 @@ public class ReflectDemo {
                 System.out.println(result);
             }
         }
+		
+		String str = "[shshhs]";
+		System.out.println(str.substring(str.indexOf("[") + 1, str.indexOf("]")));
 	}
 	
 	public static String fun(String name) {
