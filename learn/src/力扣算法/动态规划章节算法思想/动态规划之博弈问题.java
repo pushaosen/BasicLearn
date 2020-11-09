@@ -3,8 +3,12 @@ package 力扣算法.动态规划章节算法思想;
 public class 动态规划之博弈问题 {
 	
 	public static void main(String[] args) {
-		int[] piles = {1,2,3,4,5,6,7};
-		System.out.println(stoneGame(piles));
+		/*int[] piles = {1,2,3,4,5,6,7};
+		System.out.println(stoneGame(piles));*/
+		String str = "bgxxqkList+nBgsf";
+		String[] arr = str.split("\\+");
+		System.out.println(arr[0]);
+		System.out.println(arr[1]);
 	}
 
 	/** 
@@ -12,6 +16,7 @@ public class 动态规划之博弈问题 {
 	 * @param piles
 	 * @return
 	 */
+	@SuppressWarnings("unused")
 	private static int stoneGame(int[] piles) {
 		int n = piles.length;
 		// 初始化dp数组
