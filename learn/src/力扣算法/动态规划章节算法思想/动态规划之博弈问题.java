@@ -1,5 +1,7 @@
 package 力扣算法.动态规划章节算法思想;
 
+import java.math.BigDecimal;
+
 public class 动态规划之博弈问题 {
 	
 	public static void main(String[] args) {
@@ -9,6 +11,32 @@ public class 动态规划之博弈问题 {
 		String[] arr = str.split("\\+");
 		System.out.println(arr[0]);
 		System.out.println(arr[1]);
+		
+		String data = "1090.40";
+		int pos = data.lastIndexOf(".");
+        if (pos > -1){
+            String temp = data.substring(pos + 1);
+            if (temp.length() > 2){
+                data = data.substring(0, pos + 3);
+            }
+        }
+        pos = data.lastIndexOf(".00");
+        if (pos > -1) {
+            System.out.println(data.substring(0, pos));
+        }
+        pos = data.lastIndexOf(".");
+        if (pos > -1) {
+            String temp = data.substring(pos + 1);
+            int index = temp.lastIndexOf("0");
+            if (index > -1 && temp.endsWith("0")) {
+            	if (temp.length() == 1){
+                    System.out.println(data.substring(0, pos + index));
+                }
+                System.out.println(data.substring(0, pos + index + 1));
+            }
+            
+        }
+		System.out.println(data);
 	}
 
 	/** 
