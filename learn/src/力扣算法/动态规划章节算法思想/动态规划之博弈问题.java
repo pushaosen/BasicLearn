@@ -1,7 +1,5 @@
 package 力扣算法.动态规划章节算法思想;
 
-import java.math.BigDecimal;
-
 public class 动态规划之博弈问题 {
 	
 	public static void main(String[] args) {
