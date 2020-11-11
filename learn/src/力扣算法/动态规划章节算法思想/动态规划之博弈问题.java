@@ -10,7 +10,7 @@ public class 动态规划之博弈问题 {
 		System.out.println(arr[0]);
 		System.out.println(arr[1]);
 		
-		String data = "1090.40";
+		String data = "1090.00";
 		int pos = data.lastIndexOf(".");
         if (pos > -1){
             String temp = data.substring(pos + 1);
