@@ -27,6 +27,7 @@ class Merchant<T extends Customer> {
   }
 }
 
+@SuppressWarnings("unused")
 class VIPOnlyMerchant extends Merchant<VIP> {
   @Override
   public double actionPrice(VIP customer) {
@@ -34,7 +35,7 @@ class VIPOnlyMerchant extends Merchant<VIP> {
   }
   
   public static void main(String[] str) {
-	    Customer customer = new VIP();
+		Customer customer = new VIP();
 //	    new VIPOnlyMerchant().actionPrice(customer); // ±àÒë³ö´í    
   }
 }
