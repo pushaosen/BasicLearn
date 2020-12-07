@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -23,6 +24,9 @@ public class MapTest {
 		System.out.println(nBj);
 		nBj = nBj.subtract(BigDecimal.ZERO);
 		System.out.println(nBj);
+		
+		final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        System.out.println(simpleDateFormat.format("уехЩ"));;
 	}
 	
 	public static void fun(Map<String, String> map) {
