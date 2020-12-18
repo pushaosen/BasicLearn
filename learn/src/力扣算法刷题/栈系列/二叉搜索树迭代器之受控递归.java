@@ -30,7 +30,7 @@ public class 二叉搜索树迭代器之受控递归 {
 	/** 
 	 * 获取下一个元素
 	 * 时间复杂度：O(1)
-	 * 空间复杂度：O(h)
+	 * * 空间复杂度：O(h)
 	 */
 	public int next() {
 		 TreeNode topmostNode = this.stack.pop();
