@@ -106,7 +106,17 @@ public class 反转每对括号间的子串 {
 					reverse(str, parent[i] + 1, i - 1, false, sb);
 					i = parent[i];
 				}else {
-					
+					sb.append(str.charAt(i));
+				}
+			}
+		}else {
+			for(int i = start; i <= end; i ++) {
+				if(str.charAt(i) == '(') {
+					// 进行递归调用
+					reverse(str, i + 1, parent[i] - 1, true, sb);
+					i = parent[i]; 
+				}else {
+					sb.append(str.charAt(i));
 				}
 			}
 		}
